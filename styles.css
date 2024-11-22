@@ -426,13 +426,14 @@ body {
     padding: 5px;
     line-height: 1.6;
 }
-
 .text-content p {
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
     font-family: 'Open Sans', sans-serif;
     color: #333;
+    font-weight: 600;
+    font-size: 14px;  
+    line-height: 1.8;  
 }
-
 .text-content a {
     color: #022954;
     text-decoration: none;
@@ -443,4 +444,186 @@ body {
 .text-content a:hover {
     color: #6da2b1;
     text-decoration: underline;
+}
+.text-content p {
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 2.2;
+}
+
+.garden-hotline-container {
+    border-top: 2px solid #5d5d5d;
+    border-bottom: 2px solid #5d5d5d;
+    padding: 10px 0;
+    margin: 15px 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.garden-hotline-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    
+}
+.garden-hotline-container a {
+    text-decoration: underline;
+}
+
+.district-info {
+    text-align: left;
+}
+
+.district-info p {
+    font-size: 14px;
+    line-height: 1.5;
+    transform: translateY(20px);
+}
+.blue-section {
+    width: 1080px;
+    margin: 20px auto;
+    padding: 1.5rem;
+    background-color: #022954;
+    border-radius: 8px;
+    transform: translateX(-10%);
+    box-shadow: 0 4px 12px rgba(2, 41, 84, 0.3);
+}
+
+.blue-content {
+    color: white;
+    text-align: center;
+}
+
+.blue-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.blue-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    opacity: 0.9;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.document-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.doc-button {
+    background-color: #022954;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid #ffffff;
+}
+
+.doc-button:hover {
+    background-color: #004b87;
+    color: #ffffff;
+    transform: translateY(-2px);
+    
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: #0b6dd6;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1080px) {
+    .content-box, .text-section, .slideshow-section {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slideshow-container {
+        height: 350px;
+    }
+
+    .blue-section {
+        width: 90%;
+        transform: none;
+        margin: 20px auto;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+    .content-box, .text-section {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .slideshow-container {
+        height: 300px;
+    }
+
+    .text-content {
+        padding: 10px;
+    }
+
+    .document-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .doc-button {
+        width: 200px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .blue-content p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slideshow-container {
+        height: 250px;
+    }
+
+    .slide-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .slide-dots {
+        gap: 10px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
 }
